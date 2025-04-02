@@ -1,9 +1,13 @@
-# Fabric Example Mod
+mrrpp mraww aawruff awroofoaw ruf awrff awrurf awrurf arwff arfvc awrf oaw rofowr fuwr rfurffuawr foorfuawrf awruf wrooof awruf awrffff
 
-## Setup
 
-For setup instructions please see the [fabric documentation page](https://docs.fabricmc.net/develop/getting-started/setting-up-a-development-environment) that relates to the IDE that you are using.
+critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod.
+critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod.
+critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod.
+critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. vv
+critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. v
+critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. critter mod. 
 
-## License
-
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+## random notes
+- im a puppy
+- puppy food texture is from twemoji

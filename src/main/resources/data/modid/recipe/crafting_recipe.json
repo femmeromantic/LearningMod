@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "minecraft:jungle_planks",
+    "minecraft:apple"
+  ],
+  "result": {
+    "id": "modid:puppy_food",
+    "count": 1
+  }
+}
