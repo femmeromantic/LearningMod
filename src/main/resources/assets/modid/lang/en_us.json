@@ -1,3 +1,6 @@
 {
-  "item.modid.puppy_food": "Puppy Food"
+  "item.modid.peanut": "Peanut",
+  "item.modid.peanut_butter": "Peanut Butter",
+  "item.modid.peanut_butter_crunchy": "Crunchy Peanut Butter",
+  "block.modid.peanut_plant": "Peanut Plant"
 }

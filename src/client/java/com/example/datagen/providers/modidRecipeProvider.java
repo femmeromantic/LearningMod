@@ -3,6 +3,7 @@ package com.example.datagen.providers;
 import java.util.concurrent.CompletableFuture;
 
 import com.example.ExampleMod;
+import com.example.blocks.ModBlocks;
 import com.example.items.ModItems;
 import net.minecraft.data.recipe.RecipeExporter;
 import net.minecraft.data.recipe.RecipeGenerator;
@@ -27,10 +28,19 @@ public class modidRecipeProvider extends FabricRecipeProvider {
             public void generate() {
                 RegistryWrapper.Impl<Item> itemLookup = registries.getOrThrow(RegistryKeys.ITEM);
 
-                createShapeless(RecipeCategory.FOOD, ModItems.PUPPY_FOOD)
-                        .input(Items.JUNGLE_PLANKS).input(Items.APPLE)
-                        .criterion(hasItem(Items.JUNGLE_PLANKS), conditionsFromItem(Items.JUNGLE_PLANKS))
-                        .criterion(hasItem(Items.APPLE), conditionsFromItem(Items.APPLE))
+                createShapeless(RecipeCategory.FOOD, ModItems.PEANUT)
+                        .input(ModBlocks.PEANUT_PLANT)
+                        .criterion(hasItem(ModBlocks.PEANUT_PLANT), conditionsFromItem(ModBlocks.PEANUT_PLANT))
+                        .offerTo(exporter);
+
+                createShapeless(RecipeCategory.FOOD, ModItems.PEANUT_BUTTER)
+                        .input(Items.HONEY_BOTTLE).input(ModItems.PEANUT)
+                        .criterion(hasItem(Items.HONEY_BOTTLE), conditionsFromItem(Items.HONEY_BOTTLE))
+                        .offerTo(exporter);
+
+                createShapeless(RecipeCategory.FOOD, ModItems.PEANUT_BUTTER_CRUNCHY)
+                        .input(Items.HONEY_BOTTLE).input(ModItems.PEANUT).input(ModItems.PEANUT)
+                        .criterion(hasItem(Items.HONEY_BOTTLE), conditionsFromItem(Items.HONEY_BOTTLE))
                         .offerTo(exporter);
             }
         };

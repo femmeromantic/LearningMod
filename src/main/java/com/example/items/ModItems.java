@@ -15,14 +15,26 @@ import java.util.function.Function;
 
 public class ModItems {
     // why is it saturationModifier, and then nutrition?
-    public static final FoodComponent PUPPY_FOOD_COMPONENT = new FoodComponent.Builder()
-            .saturationModifier(24).nutrition(4).build();
+    public static final FoodComponent PEANUT_BUTTER_COMPONENT = new FoodComponent.Builder()
+            .saturationModifier(20f).nutrition(4).build();
 
-    public static final Item PUPPY_FOOD = register("puppy_food", Item::new, new Item.Settings().food(PUPPY_FOOD_COMPONENT));
+    public static final FoodComponent PEANUT_BUTTER_CRUNCHY_COMPONENT = new FoodComponent.Builder()
+            .saturationModifier(14.5f).nutrition(8).build();
+
+    public static final Item PEANUT = register("peanut", Item::new, new Item.Settings());
+
+    public static final Item PEANUT_BUTTER = register("peanut_butter", Item::new, new Item.Settings().food(PEANUT_BUTTER_COMPONENT));
+    public static final Item PEANUT_BUTTER_CRUNCHY = register("peanut_butter_crunchy", Item::new, new Item.Settings().food(PEANUT_BUTTER_CRUNCHY_COMPONENT));
 
     public static void initialize() {
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS)
+                .register((itemGroup) -> itemGroup.add(ModItems.PEANUT));
+
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK)
-                .register((itemGroup) -> itemGroup.add(ModItems.PUPPY_FOOD));
+                .register((itemGroup) -> itemGroup.add(ModItems.PEANUT_BUTTER));
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK)
+                .register((itemGroup) -> itemGroup.add(ModItems.PEANUT_BUTTER_CRUNCHY));
     }
 
     public static Item register(String name, Function<Item.Settings, Item> itemFactory, Item.Settings settings) {
